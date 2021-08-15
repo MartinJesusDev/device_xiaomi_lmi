@@ -413,4 +413,27 @@
     <bool name="config_proximityCheckOnWake">true</bool>
     <integer name="config_proximityCheckTimeout">100</integer>
     <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
+
+    <!-- Default fod pressed color -->
+    <integer name="config_fod_pressed_color">0</integer>
+
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_enableSmartPixels">true</bool>
+
+    <!-- Flag specifying whether pocked mode is available on device -->
+    <bool name="config_pocketModeSupported">true</bool>
+    <bool name="config_pocketUseLightSensor">false</bool>
+
+    <!-- Enable face auth only when swiping security view -->
+    <bool name="config_faceAuthOnlyOnSecurityView">true</bool>
+
+    <!-- Adaptive charging -->
+    <integer name="config_adaptiveChargingCutoffLevel">80</integer>
+    <integer name="config_adaptiveChargingResumeLevel">60</integer>
+    <integer name="config_adaptiveChargingCutoffTemperature">40</integer>
+    <integer name="config_adaptiveChargingResumeTemperature">30</integer>
+    <string name="config_adaptiveChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
+    <string name="config_adaptiveChargingSuspendValue" translatable="false">0</string>
+    <string name="config_adaptiveChargingResumeValue" translatable="false">1</string>
+
 </resources>
