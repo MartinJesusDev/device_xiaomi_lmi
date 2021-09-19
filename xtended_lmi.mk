@@ -8,19 +8,24 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Derp stuff
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit some common Xtended stuff
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Inherit from lmi device
 $(call inherit-product, device/xiaomi/lmi/device.mk)
 
-# Derp specific properties
-PRODUCT_PRODUCT_PROPERTIES += \
-  ro.derp.maintainer=Schnedi \
-  ro.derp.cpu=sm8250 \
-  ro.derp.rom=Derp
+# Xtended Stuff
+XTENDED_BUILD_TYPE := OFFICIAL
+XTENDED_BUILD_MAINTAINER := MartinJesusDev
+XTENDED_BUILD_DONATE_URL := paypal.me/TheHunter23
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+EXTRA_FOD_ANIMATIONS := true
+TARGET_HAS_FOD := true
+TARGET_GAPPS_ARCH := arm64
+$(call inherit-product, vendor/gapps/basic/config.mk)
 
-PRODUCT_NAME := derp_lmi
+PRODUCT_NAME := xtended_lmi
 PRODUCT_DEVICE := lmi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
