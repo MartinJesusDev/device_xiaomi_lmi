@@ -560,7 +560,7 @@
     <bool name="config_ledCanPulse">true</bool>
 
     <!-- Whether device has notification LED -->
-    <bool name="config_hasNotificationLed">true</bool> 
+    <bool name="config_hasNotificationLed">true</bool>
 
     <!-- List supported color modes. -->
     <integer-array name="config_availableColorModes">
@@ -660,5 +660,11 @@
     <!-- Max number of scan filters supported by blutooth controller. 0 if the
          device does not support hardware scan filters-->
     <integer name="config_bluetooth_max_scan_filters">1</integer>
+    
+    <!-- Flag specifying whether pocked mode is available on device -->
+    <bool name="config_pocketModeSupported">true</bool>
+
+    <!-- Default fod pressed color -->
+    <integer name="config_fod_pressed_color">0</integer>
 
 </resources>
