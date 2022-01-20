@@ -29,4 +29,7 @@
     <!-- Location on the screen of the center of the fingerprint sensor -->
     <dimen name="physical_fingerprint_sensor_center_screen_location_y">1655px</dimen>
 
+    <!-- UDFPS recognizing animation vertical position offset -->
+    <dimen name="udfps_animation_offset">35dp</dimen>
+
 </resources>
